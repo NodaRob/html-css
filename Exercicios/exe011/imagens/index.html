@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplimente aumente ou diminue o tamanho do seu navegador </p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="fotoP.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="fotoM.png.png" type="image/png">
+        <img src="fotoG.png" alt="imagem flexivel">
+    </picture>
+    <h1>reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML 5</p>
+    <audio src="midia/Exploring The Crystal Caves - Asher Fulero.mp3" autoplay controls></audio>
+    <audio preload="auto"autoplay controls loop>
+      <source src="midia/Exploring The Crystal Caves - Asher Fulero.mp3" type="audio/mpeg">
+      <p>Clique aqui para baixar o arquivo MP3 <a href="midia/Exploring The Crystal Caves - Asher Fulero.mp3"></a></p>
+    
+    
+    </audio>
+    
+</body>
+</html>

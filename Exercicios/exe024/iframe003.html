@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela {
+            width: 95vw;
+            height:  400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--è possivel tambem com iframe, incorporar conteudos meus dentro de uma pagina e usar lista de links para isso,(não esquecer de colocar o "name")-->
+    <h1>Faça uma escolha</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, sit fugit repudiandae sed veritatis distinctio sint consectetur ipsa omnis non necessitatibus libero molestias, laudantium fuga saepe possimus minima dolor quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum odio culpa, temporibus, explicabo vel officia sapiente nemo pariatur minus reiciendis quidem dolorem, corrupti aperiam quis. Atque rem alias aliquid!</p>
+
+    <ul>
+        <li><a href="paginasextras/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginasextras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginasextras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et aut repellendus iure ab numquam aliquid ipsum expedita rerum pariatur cumque autem excepturi nemo dolores, amet, accusantium ut rem cum doloremque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates molestiae quia beatae laudantium tenetur doloribus ratione. Non quam magni voluptas maxime dolorum voluptates, sed, ipsa quia cumque culpa molestiae. Perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, assumenda! Ducimus optio a tenetur suscipit? Delectus iure ex vitae incidunt cupiditate doloremque ut omnis, tempore illum adipisci officia earum. Molestiae?</p>
+
+    
+        <iframe id="tela" name="frame" srcdoc="<h1>Escolha umas das opções acima</h1>">
+            Infelizmente seu navegador não é compativel com isso
+        </iframe>
+  
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam enim voluptatem porro consequuntur voluptatibus qui? Ducimus commodi quasi molestiae similique, obcaecati totam maxime at cumque qui, nemo molestias corrupti unde. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nisi molestias voluptate nihil debitis dolore consectetur inventore tempore explicabo vero aperiam nulla error expedita, laboriosam aliquam! Repellat ea vel harum!</p>
+</body>
+</html>

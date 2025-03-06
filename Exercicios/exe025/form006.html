@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"> <!--Essa tag indica que estamos iniciando um formulário HTML e permite que o usuario insira dados que são enviado a um servidor, nesse caso indico o servidor onde serás inserido-->
+
+    <p>
+
+        <label for="icor">Cor:</label>
+
+        <input type="color" name="cor" id="icor"> <!--Cria uma caixa onde o usuario pode escolher uma cor-->
+       
+    </p>
+
+    <p>
+
+        <label for="inivel">Nível de satisfação</label> <!--Serve para criar um dialogo para qual tipo de dados estou pedindo-->
+
+        <input type="range" name="nivel" id="inivel" min="1" max="5"> <!--Esse tipo "range" cria um botão de nivel desatisfação-->
+   
+    </p>
+
+    <p>
+
+        <label for="ifoto">Foto do perfil</label>
+        <input type="file" name="foto" id="ifoto"> <!--Enviar arquivos do tipo "imagens" por exemplo-->
+        <!--Quando for usar o envio de arquivos, não posso usar o metodo "get" (3 mil Bits) e sim o metodo "post"-->
+    </p>
+
+
+    <p>
+
+        <input type="submit" value="Enviar"> <!--Cria um botão de enviar e uso o tipo "submit"-->
+
+        <input type="reset" value="limpar"> <!--Cria um botão de limpar e uso o tipo "reset"-->
+    
+    </p>
+
+</form>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <p>
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+            <option value="" selected>---Escolha---</option> <!--Uso option para criar um botão onde o usuario vai escolhar a opção e uso o selected também-->
+            <optgroup label="Região Sudeste"> <!--Uso o optgroup para agrupar um conjunto de seleção,nesse caso agrupei por região-->
+                <option value="SP">São Paulo</option> <!--o option são as opções que quero que usuario escolha-->
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio grande do norte</option>
+            </optgroup>
+
+            </select>
+        
+    </p>
+
+    <p>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <option value="ADM">Adminstrador</option>
+            <option value="CONT">Contabilidade</option>
+            <option value="DEV">Desenvolvedor</option>
+            <option value="PROF">Professor</option>
+        </datalist> <!--Uso o data list para criar opções, nesse caso foi profissõens -->
+    </p>
+    
+
+    <p>
+        <label for="imsg">Mensagem</label> <br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea> <!--uso o textarea para cria uma caixa onde o usuario pode inserir um texto-->
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="limpar">
+    </p>
+</form>
+    
+</body>
+</html>

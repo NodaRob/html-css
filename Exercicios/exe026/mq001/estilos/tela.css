@@ -1,0 +1,38 @@
+@charset "UTF-8" ;
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: lightpink;
+} 
+
+header > h1 {
+    text-align: center;
+}
+
+menu ul {
+    display: inline-block;
+    list-style-type: none;
+    background-color: lightsalmon;
+}
+
+menu li {
+    background-color: aquamarine;
+    display: inline-block;
+    display: inline-block;
+    padding: 10px;
+}
+
+article {
+    width: 600px;
+    display: block;
+    margin: auto;
+}
